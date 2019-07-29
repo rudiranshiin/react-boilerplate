@@ -1,0 +1,19 @@
+{
+  "name": "react-boilerplate",
+  "version": "1.0.0",
+  "description": "project template with react setup",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/rudiranshiin/react-boilerplate.git"
+  },
+  "author": "rudiyanto",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/rudiranshiin/react-boilerplate/issues"
+  },
+  "homepage": "https://github.com/rudiranshiin/react-boilerplate#readme"
+}
