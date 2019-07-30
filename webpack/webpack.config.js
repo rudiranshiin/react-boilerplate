@@ -2,11 +2,15 @@ const path = require('path');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 const MiniCssExtractPlugin = require('mini-css-extract-plugin');
 
+const BUILD_DIR = path.resolve(__dirname, '../build');
+const APP_DIR = path.resolve(__dirname, '../src/index.js');
+const HTML_DIR = path.resolve(__dirname, '../public/index.html');
+
 module.exports = {
-  entry: './src/index.js',
+  entry: APP_DIR,
   output: {
     filename: 'main.js',
-    path: path.resolve(__dirname, 'build')
+    path: BUILD_DIR
   },
   module: {
     rules: [
@@ -31,7 +35,7 @@ module.exports = {
   plugins: [
     new HtmlWebpackPlugin({
       title: 'Webpack 4 Starter',
-      template: './public/index.html',
+      template: HTML_DIR,
       inject: true,
       minify: {
         removeComments: true,
